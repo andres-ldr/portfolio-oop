@@ -123,6 +123,26 @@ body {
   margin-top: 15rem;
 }
 
+.work-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20rem;
+}
+.work-section-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.work-section-content > * {
+  margin-top: 3rem;
+}
+
 .card {
   width: 90%;
   height: 150px;
@@ -136,6 +156,9 @@ body {
 .card h5 {
   font-size: 2rem;
   font-weight: 400;
+}
+.card p {
+  font-size: 1.5rem;
 }
 .card-images {
   width: 100%;
@@ -153,6 +176,10 @@ body {
   border-radius: 50%;
   object-fit: cover;
   width: 100%;
+}
+.card-work {
+  width: 100%;
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,10 +1,5 @@
 .project-section {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20rem;
+  @include section;
 
   &-content {
     width: 60vw;

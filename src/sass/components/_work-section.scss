@@ -1,0 +1,17 @@
+.work-section {
+  @include section;
+
+  &-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    & > * {
+      margin-top: 3rem;
+    }
+
+  }
+}

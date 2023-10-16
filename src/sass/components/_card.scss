@@ -12,6 +12,9 @@
     font-size: 2rem;
     font-weight: 400;
   }
+  p {
+    font-size: 1.5rem;
+  }
 
   &-images {
     width: 100%;
@@ -31,5 +34,9 @@
         width: 100%;
       }
     }
+  }
+
+  &-work {
+    @include cardWidth(100%, 3rem);
   }
 }
