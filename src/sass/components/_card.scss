@@ -1,0 +1,35 @@
+.card {
+  width: 90%;
+  height: 150px;
+  padding: 1rem;
+  box-shadow: 3px 1.5px 0 4px #222222;
+  border-radius: 3px;
+
+  h3 {
+    font-size: 3rem;
+  }
+  h5 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  &-images {
+    width: 100%;
+    margin-top: 2rem;
+
+    & > *:not(:nth-child(1)) {
+      margin-left: 1rem;
+    }
+
+    &-item {
+      width: 30px;
+      border-radius: 50%;
+      display: inline-block;
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
