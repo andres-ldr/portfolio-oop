@@ -1,0 +1,23 @@
+footer {
+  @include section;
+  height: 400px;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &>*{
+    margin-left: 5rem;
+  }
+
+  .icon {
+    width: 36px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
