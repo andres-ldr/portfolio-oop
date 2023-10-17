@@ -2,10 +2,11 @@
   @include section;
 
   &-content {
-    width: 60vw;
+    width: 50vw;
     &-grid {
       display: grid;
       row-gap: 3rem;
+      column-gap: 2rem;
       grid-template-columns: repeat(2, 1fr);
       margin-top: 15rem;
     }
