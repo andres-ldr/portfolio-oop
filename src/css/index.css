@@ -190,13 +190,7 @@ body {
 }
 .card:hover {
   transform: translate(0, -5%);
-  background-color: gray;
-}
-.card:hover h3, .card:hover h5, .card:hover p {
-  color: rgb(241, 241, 241);
-}
-.card:hover .card-images-item {
-  opacity: 0.5;
+  box-shadow: 0 0 0 4px rgb(172, 0, 172);
 }
 
 footer {

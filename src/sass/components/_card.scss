@@ -45,16 +45,16 @@
 
   &:hover {
     transform: translate(0, -5%);
-    background-color: gray;
+    box-shadow: 0 0 0 4px rgb(172, 0, 172);
 
-    h3, h5, p {
-      color: rgb(241, 241, 241);
-    }
+    // h3, h5, p {
+    //   color: rgb(241, 241, 241);
+    // }
 
-    .card-images {
-      &-item {
-        opacity: 0.5;
-      }
-    }
+    // .card-images {
+    //   &-item {
+    //     opacity: 0.5;
+    //   }
+    // }
   }
 }
