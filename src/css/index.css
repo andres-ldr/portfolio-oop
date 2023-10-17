@@ -120,11 +120,12 @@ body {
   margin-top: 20rem;
 }
 .project-section-content {
-  width: 60vw;
+  width: 50vw;
 }
 .project-section-content-grid {
   display: grid;
   row-gap: 3rem;
+  column-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 15rem;
 }
@@ -138,7 +139,7 @@ body {
   margin-top: 20rem;
 }
 .work-section-content {
-  width: 60%;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,9 +149,11 @@ body {
 .work-section-content > * {
   margin-top: 3rem;
 }
+.work-section-content .title {
+  align-self: self-start;
+}
 
 .card {
-  width: 90%;
   height: 150px;
   padding: 1rem;
   box-shadow: 3px 1.5px 0 4px #222222;
@@ -223,6 +226,39 @@ footer .icon svg {
 }
 footer .icon:hover svg {
   fill: purple;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: 10rem;
+}
+.about-me-section h3 {
+  font-size: 3rem;
+}
+.about-me-section p {
+  font-size: 2rem;
+}
+.about-me-section-content {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-me-section-content-image {
+  width: 200px;
+  height: 200px;
+  background-image: url("../../public/images/portrait.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 8px solid black;
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=index.css.map */
