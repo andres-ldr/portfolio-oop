@@ -74,3 +74,7 @@ The goal of this assignment is to create a personal portfolio website that will 
 ## Presentation
 
 - Next Monday
+
+## inspo
+
+https://bradgarropy.com/
