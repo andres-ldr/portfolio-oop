@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: rgb(245, 245, 245);
 }
 @media (max-width: 75em) {
   html {
@@ -83,8 +84,8 @@ body {
   justify-content: space-evenly;
 }
 .main-section-container-img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: yellow;
   background-image: url("../../public/images/portrait.jpg");
@@ -149,6 +150,9 @@ body {
   padding: 1rem;
   box-shadow: 3px 1.5px 0 4px #222222;
   border-radius: 3px;
+  background-color: white;
+  transition: all 0.25s;
+  cursor: pointer;
 }
 .card h3 {
   font-size: 3rem;
@@ -169,17 +173,45 @@ body {
 }
 .card-images-item {
   width: 30px;
-  border-radius: 50%;
   display: inline-block;
 }
 .card-images-item img {
-  border-radius: 50%;
   object-fit: cover;
   width: 100%;
 }
 .card-work {
   width: 100%;
   padding: 3rem;
+}
+.card:hover {
+  transform: translate(0, -5%);
+  background-color: gray;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20rem;
+  height: 400px;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer > * {
+  margin-left: 5rem;
+}
+footer .icon {
+  width: 36px;
+}
+footer .icon svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=index.css.map */

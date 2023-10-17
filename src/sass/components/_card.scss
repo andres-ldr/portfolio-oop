@@ -4,6 +4,9 @@
   padding: 1rem;
   box-shadow: 3px 1.5px 0 4px #222222;
   border-radius: 3px;
+  background-color: white;
+  transition: all 0.25s;
+  cursor: pointer;
 
   h3 {
     font-size: 3rem;
@@ -26,10 +29,10 @@
 
     &-item {
       width: 30px;
-      border-radius: 50%;
+      // border-radius: 50%;
       display: inline-block;
       img {
-        border-radius: 50%;
+        // border-radius: 50%;
         object-fit: cover;
         width: 100%;
       }
@@ -38,5 +41,10 @@
 
   &-work {
     @include cardWidth(100%, 3rem);
+  }
+
+  &:hover {
+    transform:  translate(0,-5%);
+    background-color: gray;
   }
 }
