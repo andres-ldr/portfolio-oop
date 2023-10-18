@@ -1,10 +1,9 @@
-.about-me-section {
+.about-me-section-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  margin-top: 10rem;
+  padding-top: 10rem;
 
   h3 {
     font-size: 3rem;
@@ -13,23 +12,16 @@
     font-size: 2rem;
   }
 
-  &-content {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &-image {
-      width: 200px;
-      height: 200px;
-      background-image: url('../../public/images/portrait.jpg');
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 50%;
-      border: 8px solid black;
-      margin-bottom: 5rem;
-    }
+  &-image {
+    width: 200px;
+    height: 200px;
+    background-image: url('../../public/images/portrait.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid black;
+    margin-bottom: 5rem;
   }
+
 }

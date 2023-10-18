@@ -197,26 +197,18 @@ body {
   margin-top: 10rem;
 }
 
-.about-me-section {
+.about-me-section-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
-.about-me-section h3 {
+.about-me-section-content h3 {
   font-size: 3rem;
 }
-.about-me-section p {
+.about-me-section-content p {
   font-size: 2rem;
-}
-.about-me-section-content {
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .about-me-section-content-image {
   width: 200px;
@@ -303,6 +295,7 @@ body {
 .container {
   max-width: 50%;
   margin: 0 auto;
+  background-color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
