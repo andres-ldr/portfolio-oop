@@ -8,10 +8,10 @@
 
 html {
   // This defines what 1  rem is 10px
+  scroll-behavior: smooth;
   font-size: 62.5%;
 
   background-color: rgb(245, 245, 245);
-  
 
   @include respond(tab-land) {
     font-size: 56.25%;
