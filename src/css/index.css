@@ -8,6 +8,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   background-color: rgb(245, 245, 245);
 }
@@ -229,14 +230,6 @@ body {
   flex-direction: column;
   margin-top: 20rem;
 }
-.skills-section-content {
-  width: 60vw;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .skills-section-content h3 {
   font-size: 7rem;
 }
@@ -292,10 +285,16 @@ body {
   align-items: center;
 }
 
+.flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   max-width: 50%;
   margin: 0 auto;
-  background-color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
