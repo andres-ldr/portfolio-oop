@@ -45,10 +45,9 @@ body {
 }
 
 .navbar {
-  width: 100%;
   height: 6rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .navbar .logo {
@@ -71,17 +70,11 @@ body {
   border-radius: 10px;
 }
 
-.main-section {
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .main-section-container {
   display: flex;
-  width: 60%;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
 }
 .main-section-container-img {
   width: 200px;
@@ -100,6 +93,7 @@ body {
 }
 .main-section-container-info {
   width: 50%;
+  padding-left: 10rem;
 }
 .main-section-container-info h1 {
   font-size: 4rem;
@@ -112,7 +106,6 @@ body {
 }
 
 .project-section {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +113,7 @@ body {
   margin-top: 20rem;
 }
 .project-section-content {
-  width: 50vw;
+  width: 100%;
 }
 .project-section-content-grid {
   display: grid;
@@ -131,7 +124,6 @@ body {
 }
 
 .work-section {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +131,7 @@ body {
   margin-top: 20rem;
 }
 .work-section-content {
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,7 +147,7 @@ body {
 
 .card {
   height: 150px;
-  padding: 1rem;
+  padding: 3rem;
   box-shadow: 3px 1.5px 0 4px #222222;
   border-radius: 3px;
   background-color: white;
@@ -196,36 +188,9 @@ body {
   box-shadow: 0 0 0 4px rgb(172, 0, 172);
 }
 
-footer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20rem;
-  height: 200px;
+.footer {
   background-color: rgb(213, 213, 213);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-footer > * {
-  margin-left: 5rem;
-}
-footer .icon {
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-}
-footer .icon svg {
-  transition: all 0.3s;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-footer .icon:hover svg {
-  fill: purple;
+  margin-top: 10rem;
 }
 
 .about-me-section {
@@ -262,7 +227,6 @@ footer .icon:hover svg {
 }
 
 .skills-section {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,6 +246,59 @@ footer .icon:hover svg {
 }
 .skills-section-content .list-container h4 {
   font-size: 4rem;
+}
+
+.contact-section {
+  padding: 2rem 0;
+}
+.contact-section h3 {
+  font-size: 4rem;
+}
+.contact-section p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.contact-section-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.contact-section-icons > *:not(.contact-section-icons:first-child) {
+  padding: 2rem;
+}
+.contact-section-icons-icon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.contact-section-icons-icon svg {
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-section-icons-icon:hover svg {
+  fill: purple;
+}
+
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */
