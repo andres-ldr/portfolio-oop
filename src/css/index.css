@@ -8,6 +8,7 @@
 }
 
 html {
+  scroll-padding-top: 60px;
   scroll-behavior: smooth;
   font-size: 62.5%;
   background-color: rgb(245, 245, 245);
@@ -50,10 +51,10 @@ body {
 }
 
 .navbar {
-  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 0;
 }
 .navbar .logo {
   width: 24px;
@@ -115,7 +116,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20rem;
 }
 .project-section-content {
   width: 100%;
@@ -125,7 +125,6 @@ body {
   row-gap: 3rem;
   column-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 15rem;
 }
 
 .work-section {
@@ -133,7 +132,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20rem;
 }
 .work-section-content {
   width: 100%;
@@ -141,10 +139,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-}
-.work-section-content > * {
-  margin-top: 3rem;
 }
 .work-section-content .title {
   align-self: self-start;
@@ -171,7 +165,6 @@ body {
 }
 .card-images {
   width: 100%;
-  margin-top: 2rem;
 }
 .card-images > *:not(:nth-child(1)) {
   margin-left: 1rem;
@@ -195,7 +188,6 @@ body {
 
 .footer {
   background-color: rgb(213, 213, 213);
-  margin-top: 10rem;
 }
 
 .about-me-section-content {
@@ -228,7 +220,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20rem;
 }
 .skills-section-content h3 {
   font-size: 7rem;
@@ -252,7 +243,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
 }
 .contact-section-icons > *:not(.contact-section-icons:first-child) {
   padding: 2rem;
