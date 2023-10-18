@@ -1,0 +1,25 @@
+.skills-section {
+    @include section;
+
+    &-content {
+        width: 60vw;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 7rem;
+        }
+
+        .list-container {
+
+
+            h4 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+}

@@ -261,4 +261,27 @@ footer .icon:hover svg {
   margin-bottom: 5rem;
 }
 
+.skills-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20rem;
+}
+.skills-section-content {
+  width: 60vw;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-section-content h3 {
+  font-size: 7rem;
+}
+.skills-section-content .list-container h4 {
+  font-size: 4rem;
+}
+
 /*# sourceMappingURL=index.css.map */
