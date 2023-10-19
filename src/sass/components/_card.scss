@@ -1,5 +1,4 @@
 .card {
-  // width: 90%;
   height: 150px;
   padding: 3rem;
   box-shadow: 3px 1.5px 0 4px #222222;
@@ -14,6 +13,7 @@
   h5 {
     font-size: 2rem;
     font-weight: 400;
+    padding-bottom: 2rem;
   }
   p {
     font-size: 1.5rem;
@@ -39,7 +39,7 @@
   }
 
   &-work {
-    @include cardWidth(100%, 3rem);
+    //@include cardWidth(100%, 3rem);
     margin-bottom: 4rem;
   }
 
