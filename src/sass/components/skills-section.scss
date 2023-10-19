@@ -3,12 +3,23 @@
 
   &-content {
     h3 {
-      font-size: 7rem;
+      font-size: 5rem;
+      padding-bottom: 5rem;
+      text-shadow: 4px 2px 2px rgb(215, 0, 215);
     }
 
     .list-container {
       h4 {
-        font-size: 4rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding-bottom: 3rem;
+        li {
+          font-size: 2rem;
+        }
       }
     }
   }
