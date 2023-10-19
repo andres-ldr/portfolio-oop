@@ -46,8 +46,6 @@ body {
   font-weight: 600;
   transition: all 0.5s;
   padding-bottom: 4rem;
-}
-.title:hover {
   text-shadow: 4px 2px 2px rgb(215, 0, 215);
 }
 
@@ -138,7 +136,6 @@ body {
   padding-bottom: 7rem;
 }
 .work-section-content {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,6 +160,7 @@ body {
 .card h5 {
   font-size: 2rem;
   font-weight: 400;
+  padding-bottom: 2rem;
 }
 .card p {
   font-size: 1.5rem;
@@ -182,8 +180,6 @@ body {
   width: 100%;
 }
 .card-work {
-  width: 100%;
-  padding: 3rem;
   margin-bottom: 4rem;
 }
 .card:hover {
@@ -200,7 +196,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-bottom: 7rem;
+  padding-top: 5rem;
 }
 .about-me-section-content h3 {
   font-size: 3rem;
@@ -228,10 +225,21 @@ body {
   padding-bottom: 7rem;
 }
 .skills-section-content h3 {
-  font-size: 7rem;
+  font-size: 5rem;
+  padding-bottom: 5rem;
+  text-shadow: 4px 2px 2px rgb(215, 0, 215);
 }
 .skills-section-content .list-container h4 {
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.skills-section-content .list-container ul {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.skills-section-content .list-container ul li {
+  font-size: 2rem;
 }
 
 .contact-section {
