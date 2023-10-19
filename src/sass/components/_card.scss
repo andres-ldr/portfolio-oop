@@ -40,6 +40,7 @@
 
   &-work {
     @include cardWidth(100%, 3rem);
+    margin-bottom: 4rem;
   }
 
   &:hover {

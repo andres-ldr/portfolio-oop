@@ -45,6 +45,7 @@ body {
   font-size: 8rem;
   font-weight: 600;
   transition: all 0.5s;
+  padding-bottom: 4rem;
 }
 .title:hover {
   text-shadow: 4px 2px 2px rgb(215, 0, 215);
@@ -81,6 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 70vh;
+  padding-bottom: 5rem;
 }
 .main-section-container-img {
   width: 200px;
@@ -116,6 +118,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 7rem;
 }
 .project-section-content {
   width: 100%;
@@ -132,6 +135,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 7rem;
 }
 .work-section-content {
   width: 100%;
@@ -180,6 +184,7 @@ body {
 .card-work {
   width: 100%;
   padding: 3rem;
+  margin-bottom: 4rem;
 }
 .card:hover {
   transform: translate(0, -5%);
@@ -220,6 +225,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 7rem;
 }
 .skills-section-content h3 {
   font-size: 7rem;
