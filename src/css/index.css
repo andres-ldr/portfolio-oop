@@ -68,6 +68,10 @@ body {
 }
 .navbar-items-container-item {
   text-decoration: none;
+  color: rgb(161, 46, 161);
+}
+.navbar-items-container-item:hover {
+  color: purple;
 }
 .navbar-items-container-line {
   height: 2rem;
@@ -140,30 +144,52 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .work-section-content .title {
   align-self: self-start;
 }
 
 .card {
+  -moz-perspective: 150rem;
+  position: relative;
   height: 150px;
-  padding: 3rem;
-  box-shadow: 3px 1.5px 0 4px #222222;
-  border-radius: 3px;
-  background-color: white;
-  transition: all 0.25s;
+  width: 100%;
   cursor: pointer;
+  margin-bottom: 6rem;
 }
-.card h3 {
+.card__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 3px 1.5px 0 4px #222222;
+  padding: 3rem;
+  transition: all 0.8s ease;
+}
+.card__side h3 {
   font-size: 3rem;
 }
-.card h5 {
+.card__side h5 {
   font-size: 2rem;
   font-weight: 400;
   padding-bottom: 2rem;
 }
-.card p {
+.card__side p {
   font-size: 1.5rem;
+}
+.card__side--back {
+  transform: rotateX(180deg);
+}
+.card:hover .card__side--front {
+  transform: rotateX(-180deg);
+}
+.card:hover .card__side--back {
+  box-shadow: 0 0 0 4px rgb(172, 0, 172);
+  transform: rotateX(0);
 }
 .card-images {
   width: 100%;
@@ -178,13 +204,6 @@ body {
 .card-images-item img {
   object-fit: cover;
   width: 100%;
-}
-.card-work {
-  margin-bottom: 4rem;
-}
-.card:hover {
-  transform: translate(0, -5%);
-  box-shadow: 0 0 0 4px rgb(172, 0, 172);
 }
 
 .footer {
@@ -299,6 +318,7 @@ body {
 .container {
   max-width: 50%;
   margin: 0 auto;
+  background-color: red;
 }
 
 /*# sourceMappingURL=index.css.map */

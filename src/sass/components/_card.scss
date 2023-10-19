@@ -1,22 +1,52 @@
 .card {
+  // perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
   height: 150px;
-  padding: 3rem;
-  box-shadow: 3px 1.5px 0 4px #222222;
-  border-radius: 3px;
-  background-color: white;
-  transition: all 0.25s;
+  width: 100%;
   cursor: pointer;
+  margin-bottom: 6rem;
 
-  h3 {
-    font-size: 3rem;
+  &__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 3px 1.5px 0 4px #222222;
+    padding: 3rem;
+    transition: all 0.8s ease;
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h5 {
+      font-size: 2rem;
+      font-weight: 400;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    &--front {
+    }
+
+    &--back {
+      transform: rotateX(180deg);
+    }
   }
-  h5 {
-    font-size: 2rem;
-    font-weight: 400;
-    padding-bottom: 2rem;
+  &:hover &__side--front {
+    transform: rotateX(-180deg);
   }
-  p {
-    font-size: 1.5rem;
+  &:hover &__side--back {
+    box-shadow: 0 0 0 4px rgb(172, 0, 172);
+
+    transform: rotateX(0);
   }
 
   &-images {
@@ -36,25 +66,5 @@
         width: 100%;
       }
     }
-  }
-
-  &-work {
-    //@include cardWidth(100%, 3rem);
-    margin-bottom: 4rem;
-  }
-
-  &:hover {
-    transform: translate(0, -5%);
-    box-shadow: 0 0 0 4px rgb(172, 0, 172);
-
-    // h3, h5, p {
-    //   color: rgb(241, 241, 241);
-    // }
-
-    // .card-images {
-    //   &-item {
-    //     opacity: 0.5;
-    //   }
-    // }
   }
 }

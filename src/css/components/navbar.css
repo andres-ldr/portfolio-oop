@@ -17,6 +17,10 @@
 }
 .navbar-items-container-item {
   text-decoration: none;
+  color: rgb(161, 46, 161);
+}
+.navbar-items-container-item:hover {
+  color: purple;
 }
 .navbar-items-container-line {
   height: 2rem;

@@ -18,6 +18,11 @@
 
     &-item {
       text-decoration: none;
+      color: rgb(161, 46, 161);
+
+      &:hover {
+        color: purple;
+      }
     }
 
     &-line {
