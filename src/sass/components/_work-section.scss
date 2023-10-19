@@ -2,14 +2,10 @@
   @include section;
 
   &-content {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    & > * {
-    }
 
     .title {
       align-self: self-start;
