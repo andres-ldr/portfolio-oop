@@ -8,9 +8,17 @@
 
   h3 {
     font-size: 3rem;
+
+    @include respond(tab-port) {
+      font-size: 5rem;
+    }
+
   }
   p {
     font-size: 2rem;
+    @include respond(tab-port) {
+      font-size: 4rem;
+    }
   }
 
   &-image {

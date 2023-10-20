@@ -6,12 +6,18 @@
       font-size: 5rem;
       padding-bottom: 5rem;
       text-shadow: 4px 2px 2px rgb(215, 0, 215);
+      @include respond(tab-port) {
+        font-size: 10rem;
+      }
     }
 
     .list-container {
       h4 {
         font-size: 3rem;
         margin-bottom: 2rem;
+        @include respond(tab-port) {
+          font-size: 6rem;
+        }
       }
       ul {
         list-style: none;
@@ -19,6 +25,9 @@
         padding-bottom: 3rem;
         li {
           font-size: 2rem;
+          @include respond(tab-port) {
+            font-size: 4rem;
+          }
         }
       }
     }

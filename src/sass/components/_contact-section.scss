@@ -2,11 +2,18 @@
   padding: 2rem 0;
   h3 {
     font-size: 4rem;
+    @include respond(tab-port) {
+      font-size: 5rem;
+    }
   }
 
   p {
     font-size: 2rem;
     padding-top: 2rem;
+    @include respond(tab-port) {
+      font-size: 3rem;
+      padding-bottom: 4rem;
+    }
   }
 
   &-icons {
@@ -35,6 +42,10 @@
         svg {
           fill: purple;
         }
+      }
+      @include respond(tab-port) {
+        width: 48px;
+        height: 48px;
       }
     }
   }
