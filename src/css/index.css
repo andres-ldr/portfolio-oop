@@ -48,6 +48,11 @@ body {
   padding-bottom: 4rem;
   text-shadow: 4px 2px 2px rgb(215, 0, 215);
 }
+@media (max-width: 56.25em) {
+  .title {
+    font-size: 8rem;
+  }
+}
 
 .navbar {
   display: flex;
@@ -233,6 +238,12 @@ body {
   column-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 37.5em) {
+  .project-section-content-grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}
 
 .work-section {
   display: flex;
@@ -275,12 +286,27 @@ body {
 .card__side h3 {
   font-size: 3rem;
 }
+@media (max-width: 56.25em) {
+  .card__side h3 {
+    font-size: 5rem;
+  }
+}
 .card__side h5 {
   font-size: 2.5rem;
   font-weight: 400;
 }
+@media (max-width: 56.25em) {
+  .card__side h5 {
+    font-size: 4rem;
+  }
+}
 .card__side p {
   font-size: 1.8rem;
+}
+@media (max-width: 56.25em) {
+  .card__side p {
+    font-size: 3rem;
+  }
 }
 .card__side-images {
   width: 100%;
@@ -330,8 +356,18 @@ body {
 .about-me-section-content h3 {
   font-size: 3rem;
 }
+@media (max-width: 56.25em) {
+  .about-me-section-content h3 {
+    font-size: 5rem;
+  }
+}
 .about-me-section-content p {
   font-size: 2rem;
+}
+@media (max-width: 56.25em) {
+  .about-me-section-content p {
+    font-size: 4rem;
+  }
 }
 .about-me-section-content-image {
   width: 200px;
@@ -357,9 +393,19 @@ body {
   padding-bottom: 5rem;
   text-shadow: 4px 2px 2px rgb(215, 0, 215);
 }
+@media (max-width: 56.25em) {
+  .skills-section-content h3 {
+    font-size: 10rem;
+  }
+}
 .skills-section-content .list-container h4 {
   font-size: 3rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 56.25em) {
+  .skills-section-content .list-container h4 {
+    font-size: 6rem;
+  }
 }
 .skills-section-content .list-container ul {
   list-style: none;
@@ -369,6 +415,11 @@ body {
 .skills-section-content .list-container ul li {
   font-size: 2rem;
 }
+@media (max-width: 56.25em) {
+  .skills-section-content .list-container ul li {
+    font-size: 4rem;
+  }
+}
 
 .contact-section {
   padding: 2rem 0;
@@ -376,9 +427,20 @@ body {
 .contact-section h3 {
   font-size: 4rem;
 }
+@media (max-width: 56.25em) {
+  .contact-section h3 {
+    font-size: 5rem;
+  }
+}
 .contact-section p {
   font-size: 2rem;
   padding-top: 2rem;
+}
+@media (max-width: 56.25em) {
+  .contact-section p {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+  }
 }
 .contact-section-icons {
   display: flex;
@@ -402,6 +464,12 @@ body {
 }
 .contact-section-icons-icon:hover svg {
   fill: purple;
+}
+@media (max-width: 56.25em) {
+  .contact-section-icons-icon {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .header {
