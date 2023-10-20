@@ -1,8 +1,7 @@
 .card {
-  // perspective: 150rem;
-  -moz-perspective: 150rem;
+  perspective: 150rem;
   position: relative;
-  height: 150px;
+  height: 150px; //check
   width: 100%;
   cursor: pointer;
   margin-bottom: 6rem;
@@ -24,13 +23,30 @@
     }
 
     h5 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 400;
-      padding-bottom: 2rem;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    &-images {
+      width: 100%;
+      & > *:not(:nth-child(1)) {
+        margin-left: 1rem;
+      }
+
+      &-item {
+        width: 30px;
+        border-radius: 20%;
+        display: inline-block;
+        img {
+          border-radius: 20%;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
     }
 
     &--front {
@@ -39,7 +55,15 @@
     &--back {
       transform: rotateX(180deg);
     }
+
+    &__simple {
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        box-shadow: 0 0 0 4px rgb(172, 0, 172);
+      }
+    }
   }
+
   &:hover &__side--front {
     transform: rotateX(-180deg);
   }
@@ -47,24 +71,5 @@
     box-shadow: 0 0 0 4px rgb(172, 0, 172);
 
     transform: rotateX(0);
-  }
-
-  &-images {
-    width: 100%;
-
-    & > *:not(:nth-child(1)) {
-      margin-left: 1rem;
-    }
-
-    &-item {
-      width: 30px;
-      // border-radius: 50%;
-      display: inline-block;
-      img {
-        // border-radius: 50%;
-        object-fit: cover;
-        width: 100%;
-      }
-    }
   }
 }
