@@ -1,31 +1,18 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-}
-.navbar .logo {
-  width: 24px;
-}
-.navbar-items-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-  font-size: medium;
-  width: 60rem;
-}
-.navbar-items-container-item {
-  text-decoration: none;
-  color: rgb(161, 46, 161);
-}
-.navbar-items-container-item:hover {
-  color: purple;
-}
-.navbar-items-container-line {
-  height: 2rem;
-  border: 1px solid black;
-  border-radius: 10px;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 10 | /     @include respond(tab-port) {
+ * 11 | |       width: 36px;
+ * 12 | \     }
+ *    '
+ *   src\sass\components\navbar.scss 10:5  root stylesheet */
 
-/*# sourceMappingURL=navbar.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c      @include respond(tab-port) {\a 11 \2502  \2502        width: 36px;\a 12 \2502  \2514      }\a    \2575 \a   src\\sass\\components\\navbar.scss 10:5  root stylesheet";
+}

@@ -6,6 +6,10 @@
 
   .logo {
     width: 24px;
+
+    @include respond(tab-port) {
+      width: 36px;
+    }
   }
 
   &-items-container {
@@ -23,12 +27,53 @@
       &:hover {
         color: purple;
       }
+      @include respond(big-desktop) {
+        font-size: 2rem;
+      }
     }
 
     &-line {
       height: 2rem;
       border: 1px solid black;
       border-radius: 10px;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__hamburguer {
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+    &__line {
+      position: absolute;
+      width: 100%;
+      border: 3px black solid;
+      border-radius: 20px;
+
+      &-1 {
+        top: 30%;
+        transform: translateY(-30%);
+      }
+      &-2 {
+        top: 60%;
+        transform: translateY(-60%);
+      }
+    }
+
+    &--checkbox {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+
+    @include respond(tab-port) {
+      display: block;
     }
   }
 }
