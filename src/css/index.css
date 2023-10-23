@@ -347,7 +347,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .card {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
   }
 }
 
