@@ -82,4 +82,10 @@
 
     transform: rotateX(0);
   }
+  @include respond(tab-port) {
+    margin-bottom: 16rem;
+  }
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
 }

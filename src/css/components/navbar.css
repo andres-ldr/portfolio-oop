@@ -1,7 +1,7 @@
 /* Error: Undefined mixin.
  *    ,
  * 10 | /     @include respond(tab-port) {
- * 11 | |       width: 36px;
+ * 11 | |       width: 32px;
  * 12 | \     }
  *    '
  *   src\sass\components\navbar.scss 10:5  root stylesheet */
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c      @include respond(tab-port) {\a 11 \2502  \2502        width: 36px;\a 12 \2502  \2514      }\a    \2575 \a   src\\sass\\components\\navbar.scss 10:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c      @include respond(tab-port) {\a 11 \2502  \2502        width: 32px;\a 12 \2502  \2514      }\a    \2575 \a   src\\sass\\components\\navbar.scss 10:5  root stylesheet";
 }

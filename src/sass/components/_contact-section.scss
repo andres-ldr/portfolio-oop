@@ -27,8 +27,8 @@
     }
 
     &-icon {
-      width: 36px;
-      height: 36px;
+      width: 84px;
+      height: 84px;
       cursor: pointer;
 
       svg {
@@ -43,7 +43,12 @@
           fill: purple;
         }
       }
+
       @include respond(tab-port) {
+        width: 72px;
+        height: 72px;
+      }
+      @include respond(phone) {
         width: 48px;
         height: 48px;
       }

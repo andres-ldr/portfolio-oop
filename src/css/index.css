@@ -65,7 +65,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .navbar .logo {
-    width: 36px;
+    width: 32px;
   }
 }
 .navbar-items-container {
@@ -89,7 +89,7 @@ body {
   }
 }
 .navbar-items-container-line {
-  height: 2rem;
+  height: 1rem;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -107,7 +107,7 @@ body {
 .navbar__hamburguer__line {
   position: absolute;
   width: 100%;
-  border: 3px black solid;
+  border: 2px black solid;
   border-radius: 20px;
 }
 .navbar__hamburguer__line-1 {
@@ -154,8 +154,8 @@ body {
 }
 @media (max-width: 56.25em) {
   .main-section-container-img {
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
   }
 }
 .main-section-container-info {
@@ -340,6 +340,16 @@ body {
   box-shadow: 0 0 0 4px rgb(172, 0, 172);
   transform: rotateX(0);
 }
+@media (max-width: 56.25em) {
+  .card {
+    margin-bottom: 16rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .card {
+    margin-bottom: 3rem;
+  }
+}
 
 .footer {
   background-color: rgb(213, 213, 213);
@@ -452,8 +462,8 @@ body {
   padding: 2rem;
 }
 .contact-section-icons-icon {
-  width: 36px;
-  height: 36px;
+  width: 84px;
+  height: 84px;
   cursor: pointer;
 }
 .contact-section-icons-icon svg {
@@ -466,6 +476,12 @@ body {
   fill: purple;
 }
 @media (max-width: 56.25em) {
+  .contact-section-icons-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+@media (max-width: 37.5em) {
   .contact-section-icons-icon {
     width: 48px;
     height: 48px;
